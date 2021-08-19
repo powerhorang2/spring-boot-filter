@@ -11,12 +11,12 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/temp")
-public class ApiController {
+@RequestMapping("/api/user")
+public class ApiUserController {
 
 	@PostMapping("")
 	public User user(@RequestBody User user) {
-		log.info("Temp : {}", user);
+		log.info("User : {}", user);
 		return user;
 	}
 }
